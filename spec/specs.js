@@ -3,6 +3,6 @@ describe('Contact', function() {
     var testContact = new Contact("Rita","Moreno");
     expect(testContact.firstName).to.equal("Rita");
     expect(testContact.lastName).to.equal("Moreno");
-    expect(testContact.addresses).to.eql([]);
+    expect(testContact.address).to.eql([]);
   });
 });
