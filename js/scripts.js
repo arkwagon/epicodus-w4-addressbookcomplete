@@ -4,6 +4,9 @@ function Contact(firstName,lastName) {
   this.address = [];
 }
 
+Contact.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+}
 
 
 //
