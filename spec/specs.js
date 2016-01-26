@@ -10,3 +10,17 @@ describe('Contact', function() {
     expect(testContact.fullName()).to.equal("Sherlock Holmes");
   });
 });
+
+describe("Address", function() {
+  it("creates a new address with the kind of address, street, city, state fields", function() {
+    var testAddress = new Address("Home","324 Street","Portland","Oregon");
+    expect(testAddress.kind).to.equal("Home");
+    expect(testAddress.street).to.equal("324 Street");
+    expect(testAddress.city).to.equal("Portland");
+    expect(testAddress.state).to.equal("Oregon");
+  });
+  it("creates a method that concatenates the user's full address", function() {
+    var fullAddress = new Address("Home","324 Street","Portland","Oregon");
+    expect(testAddress.fullAddress()).to.equal("Home: 324 Street, Portland, Oregon");
+  });
+});
