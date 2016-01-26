@@ -2,6 +2,10 @@
   display: none;
 }
 
+#contacts {
+  list-style-type: none;
+}
+
 .contact {
   cursor: pointer;
   color: #0088cc;
