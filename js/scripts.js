@@ -15,6 +15,9 @@ function Address(kind,street,city,state) {
   this.state = state;
 }
 
+Address.prototype.fullAddress = function() {
+  return this.kind + ": " + this.street + ", " + this.city + ", " + this.state;
+}
 
 
 $(document).ready(function() {

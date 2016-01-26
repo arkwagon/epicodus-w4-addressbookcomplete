@@ -20,7 +20,7 @@ describe("Address", function() {
     expect(testAddress.state).to.equal("Oregon");
   });
   it("creates a method that concatenates the user's full address", function() {
-    var fullAddress = new Address("Home","324 Street","Portland","Oregon");
+    var testAddress = new Address("Home","324 Street","Portland","Oregon");
     expect(testAddress.fullAddress()).to.equal("Home: 324 Street, Portland, Oregon");
   });
 });
